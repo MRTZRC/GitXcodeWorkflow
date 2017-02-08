@@ -23,6 +23,11 @@ class ViewController: UIViewController {
     func sayHello(){
         print("Goodbye World")
     }
+    
+    func sayGoodbye(){
+        print("Goodbye")
+        print()
+    }
 
 
 }
