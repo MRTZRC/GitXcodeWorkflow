@@ -23,6 +23,9 @@
                         <subviews>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FPS-dE-cA1">
                                 <rect key="frame" x="163" y="318" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchingSwitcher:" destination="BYZ-38-t0r" eventType="valueChanged" id="5bz-el-0tn"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34u-mh-4nf">
                                 <rect key="frame" x="166" y="222" width="42" height="21"/>
@@ -39,6 +42,10 @@
                             <constraint firstItem="FPS-dE-cA1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tmX-iU-YkM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="switcherState" destination="34u-mh-4nf" id="b0c-go-JSv"/>
+                        <outlet property="theSwitch" destination="FPS-dE-cA1" id="f7E-Mr-89P"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
